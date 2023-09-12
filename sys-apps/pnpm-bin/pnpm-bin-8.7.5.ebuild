@@ -7,8 +7,6 @@ DESCRIPTION="Fast, disk space efficient package manager"
 HOMEPAGE="https://github.com/pnpm/pnpm"
 SRC_URI="https://github.com/pnpm/pnpm/releases/download/v${PV}/pnpm-linux-x64 -> pnpm-bin-${PV}"
 
-# S="${WORKDIR}"
-
 S="${WORKDIR}"
 QA_PREBUILT="*"
 RESTRICT="mirror strip"
