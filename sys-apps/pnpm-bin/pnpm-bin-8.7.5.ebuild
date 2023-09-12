@@ -11,7 +11,7 @@ SRC_URI="https://github.com/pnpm/pnpm/releases/download/v${PV}/pnpm-linux-x64 ->
 
 S="${WORKDIR}"
 QA_PREBUILT="*"
-RESTRICT="mirror"
+RESTRICT="mirror strip"
 
 LICENSE="MIT"
 SLOT="0"
