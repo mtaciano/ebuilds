@@ -23,7 +23,7 @@ RDEPEND="
 	${PYTHON_DEPS}
 	dev-python/pulsectl[${PYTHON_USEDEP}]
 	dev-python/pygobject:3[${PYTHON_USEDEP}]
-	media-sound/pulseaudio
+	media-libs/libpulse
 "
 DEPEND="
 	${RDEPEND}
