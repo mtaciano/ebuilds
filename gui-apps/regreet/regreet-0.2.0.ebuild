@@ -216,6 +216,7 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64"
+IUSE="+gtk4_8"
 
 DEPEND="
 	gui-libs/gtk
@@ -226,6 +227,10 @@ RDEPEND="
 "
 
 src_configure() {
+	local myfeatures=(
+		$(usev gtk4_8)
+	)
+
 	cargo_src_configure
 }
 
