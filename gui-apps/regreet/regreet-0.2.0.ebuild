@@ -204,9 +204,10 @@ inherit cargo
 
 DESCRIPTION="Clean and customizable greeter for greetd"
 HOMEPAGE="https://github.com/rharish101/ReGreet"
-SRC_URI="https://github.com/rharish101/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
+SRC_URI="https://github.com/rharish101/${PN}/archive/refs/tags/${PV}.tar.gz
 	${CARGO_CRATE_URIS}
 "
+S="${WORKDIR}/ReGreet-${PV}"
 LICENSE="GPL-3+"
 # Dependent crate licenses
 LICENSE+="
